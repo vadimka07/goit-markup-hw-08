@@ -1,0 +1,102 @@
+/*Page Portfolio*/
+.jobs
+    h2
+        font-size: 18px
+        line-height: floor((36 / 18), 2)
+        letter-spacing: 0.06em
+    p
+        font-size: 16px
+        line-height: floor((30 / 16), 2)
+        letter-spacing: 0.03em
+.tabs-name
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    width: auto
+    gap: 10px
+    @media tablet
+        flex-wrap: wrap
+        justify-content flex-start
+    
+    &__button
+        border: none
+        background-color: var(--colorbuttonDafault)
+        color: var(--colortextButton)
+        font-size: 16px
+        line-height: floor((26 / 16), 2)
+        letter-spacing: 0.03em
+        border-radius: 4px
+        padding: 6px 22px
+        font-family: var(--ffMedium)
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+        &:focus
+            background-color: var(--colorbuttonActive)
+            color: var(--colorWhite)
+            box-shadow: var(--boxShadowActiveButton)
+    &--current
+        background-color: var(--colorbuttonActive)
+        color: var(--colorWhite)
+        box-shadow: var(--boxShadowActiveButton)
+
+.tabs-content
+    display: flex
+    flex-wrap: wrap
+    margin-top: calc(-30px + 50px)
+    margin-left: -30px
+    &__item
+        flex-basis: calc(100% / 3 - 30px)
+        margin-left: 30px
+        margin-top: 30px
+        border: 1px solid var(--borderColorTabs)
+        position: relative
+        transition: 0.3s
+        @media mobile768
+            flex-basis: calc(100% / 2 - 30px)
+        @media mobile480
+            width: 100%
+            flex-basis: 100%
+        &:hover
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+            .tabs-content__hover-container
+                transform: translateY(0%)
+    &__link
+        text-decoration: none
+        pointer-events: none
+        display: block
+    &__image
+        @media mobile480
+            width: 100%
+            object-fit: cover
+    &__img-container
+        overflow: hidden
+        max-height: 294px
+        position: relative
+        @media mobile768
+            max-height:72vw
+    &__text-container
+        padding: 20px 24px
+    
+    &__hover-container
+        position: absolute
+        top: 0
+        padding: 65px 24px
+        color: var(--colorWhite)
+        background-color: var(--colorportfolioItemHover)
+        transform: translateY(101%)
+        transition: 0.3s
+        @media mobile768
+            padding: 8.5vw 3vw
+        @media mobile480
+            padding: 11vw 6vw
+        p
+            color: var(--colorWhite)
+            font-size: 18px
+            line-height: floor((28 / 18), 2)
+            @media mobile768
+                font-size:2.2vw
+            @media mobile480
+                font-size:4.7vw
+/*End Page Portfolio*/

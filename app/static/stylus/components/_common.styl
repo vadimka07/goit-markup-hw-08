@@ -1,0 +1,112 @@
+//common style
+.body__hidden
+	overflow: hidden
+
+body
+	font-family: var(--ffReg)
+	font-size: var(--fonSizeAllDocument)
+
+h1
+	font-size: 44px
+	line-height: floor((60/44), 2)
+	letter-spacing: 0.06em
+	text-align: center
+	font-family: var(--ffBlack)
+	text-transform: uppercase
+	color: var(--colorWhite)
+	@media tablet
+		font-size: 3.4vw
+		line-height: 1.6
+		letter-spacing: 0.063em
+	@media mobile480
+		font-size: 5.6vw
+
+h2,
+h3,
+h4,
+h5,
+h6
+	color: var(--colorTitle)
+	font-family: var(--ffBold)
+p
+	color: var(--colorText)
+img
+	max-width: 100%
+	display: block
+
+.main-page
+	h2
+		font-size: 36px
+		line-height: floor((42 / 36), 2)
+		letter-spacing: 0.03em
+		text-align: center
+		@media tablet
+			font-size: 3.7vw
+		@media mobile480
+			font-size: 6vw
+.wrapper
+	width: calc(1600px - (200px * 2))
+	margin: 0 auto
+	padding: 0 15px
+	@media desktopmaxWidth1200
+		width: 100%
+		font-family Roboto
+
+
+
+main
+	margin-top: 80px
+	@media mobile480
+		margin-top:13vw
+
+
+/*common style*/
+
+.advantages
+.what-we-doing
+.our-team
+.jobs
+.customers
+	padding: 94px 0
+	@media desktopmaxWidth1200
+		padding: 6.05vw 0
+	@media mobile768
+		padding: 7.75vw 0
+	@media mobile480
+		padding:12.75vw 0
+
+.advantages
+	@media desktopmaxWidth1200
+		padding-bottom: 3.025vw
+.what-we-doing__image-items
+.our-team__list-items
+	margin-top: 50px
+
+
+address
+	@media mobile768
+		text-align: center
+
+/*end common style*/
+
+.mobile
+	display: none !important
+	//@media tablet
+	@media mobile480
+		display: block !important
+		
+
+.mobile-flex
+	display: none !important
+	@media tablet
+		display: flex !important
+
+.desktop
+	display: block !important
+	@media tablet
+		display: none !important
+		
+.desktop-flex
+	display: flex !important
+	@media tablet
+		display: none !important

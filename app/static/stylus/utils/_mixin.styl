@@ -1,0 +1,39 @@
+desktop = 1920px
+vw(size)
+	((size / desktop) * 100)vw
+
+px(size)
+	((size / 100) * desktop)px
+
+mobile = 480px
+vwm(size)
+	((size / mobile) * 100)vw
+
+// root-font-size: 16px
+// rem(size)
+// 	size / root-font-size * 1rem
+
+lh(lineHeight, fontSize)
+	(lineHeight / fontSize)
+//color text Section 1
+colorTextTopSection()
+	color: colorTextSection1
+//font family bold -> font name in variable file _variable.styl
+ffr()
+	font-family: Roboto
+//font family black -> font name in variable file _variable.styl
+ffm()
+	font-family: RobotoMedium
+//font family regular -> font name in variable file _variable.styl
+ffb()
+	font-family: RobotoBold
+//font family regular -> font name in variable file _variable.styl
+ffblack()
+	font-family: RobotoBlack
+//font family bold -> font name in variable file _variable.styl
+ffbRaleway()
+	font-family: RalewayBold
+ffbRalewayBlack()
+	font-family: RalewayBlack
+ffbMix()
+	font-family: Roboto, Raleway

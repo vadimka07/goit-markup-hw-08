@@ -1,0 +1,202 @@
+footer
+    background-color: var(--bgColorFooter)
+    padding: 60px 0
+    @media mobile480
+        padding: 14vw 0
+    .wrapper
+        display: flex
+        @media desktopmaxWidth1200
+            flex-wrap: wrap
+        @media mobile768
+            padding: 0 10.8vw
+        @media mobile480
+            padding: 0 3.8vw
+    
+    p
+        color: var(--colorWhite)
+        font-size: 14px
+        line-height: floor((24 / 14), 2)
+        letter-spacing: 0.03em
+    
+    
+    &__social
+        @media desktopmaxWidth1200
+            margin-bottom: 20px
+    
+    
+    p
+        margin-bottom: 20px
+        @media mobile768
+            font-size: 1.83vw
+            line-height: floor((24 / 16), 2)
+            margin-top: 2.8vw
+        @media mobile480
+            font-size: 3.13vw
+            margin-bottom: 0
+    .address--top-indent
+        margin-top:20px
+.footer
+    &__logo
+        color: var(--colorWhite)
+    &__list-icons
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &__list-item
+            overflow hidden
+    &__item-link
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 44px
+        height: 44px
+        border-radius: 100%
+        color: var(--colorSocialIcon)
+        transition: 0.2s
+        fill: var(--colorSocialIcon)
+        background-color: var(--bgColorLinkFooterSocialIcon)
+        @media mobile480
+            width: 11vw
+            height: 11vw
+        &:hover
+        &:focus
+            background-color: var(--colorbuttonActive)
+            fill: var(--colorWhite)
+            .icon
+                fill: var(--colorWhite)
+    &__list-icon
+        width: 4.5vw
+    &__communication
+        display: block
+        width: auto
+        @media mobile480
+            margin-top:2vw
+    &__communication-item
+        &:first-child
+            @media mobile768
+                margin-right: 0
+                text-align: center
+        
+        .logo
+            @media mobile768
+                margin-right: 0
+                text-align: center
+                display: block
+    &__communication-item-link
+        font-family: var(--ffReg)
+        color: var(--colorLinkFooter)
+        line-height: 24px
+        letter-spacing: 0.03em
+        @media mobile768
+            text-align: center
+            display: block
+            font-size: 1.75vw
+        @media mobile480
+            font-size: 2.95vw
+            justify-content center
+    
+    &__address
+        margin-right: auto
+        @media desktopmaxWidth1200
+            margin-bottom: 20px
+        @media mobile768
+            text-align: center
+        @media mobile480
+            margin-left: auto
+            margin-bottom: 7vw
+            text-align center
+.share__social
+    text-transform: uppercase
+    font-family: var(--ffBold)
+    width: 206px
+    @media desktopmaxWidth1200
+        margin-bottom: 20px
+    @media mobile768
+        text-align: center
+    @media mobile480
+        margin: 0 auto
+        
+    p
+        @media mobile768
+            margin-bottom: 1.8vw
+            margin-top: 1vw
+        @media mobile480
+            font-size: 2.9vw
+            text-align center
+            margin-bottom: 5.8vw
+
+.subscribe
+    width: 569px
+    margin-left: auto
+    @media desktopmaxWidth1200
+        margin-right: auto
+    @media mobile480
+        margin: 7vw 0 0
+    form
+        display: flex
+        flex-wrap: wrap
+        @media mobile768
+            flex-direction: column
+            align-items: center
+        p
+            flex-basis: 100%
+            flex-grow: 1
+            text-transform: uppercase
+            font-family: var(--ffBold)
+            margin-bottom: 20px
+            @media mobile768
+                margin: 4.8vw 0 1.8vw
+            @media mobile480
+                font-size: 2.9vw
+                text-align center
+                margin: 4.8vw 0 5.8vw
+                
+                
+        label
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            @media mobile768
+                width: 80%
+            @media mobile480
+                width: 100%
+        
+        input
+            width: 358px
+            height: 50px
+            box-sizing: border-box
+            padding-left: 15px
+            font-size: 16px
+            border-radius: 4px
+            border: 1px solid var(--colorBorderInputFooter)
+            background: transparent
+            @media mobile768
+                width: 100%
+            @media mobile480
+                height: 11vw
+                width: 100%
+    &__button
+        color: var(--colorWhite)
+        background-color: var(--colorButton)
+        border: none
+        width: 200px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: var(--ffBold)
+        font-size: 16px
+        box-sizing: border-box
+        margin-left: 11px
+        border-radius: 4px
+        @media mobile768
+            padding: 1.8vw
+            margin-top: 2.6vw
+        @media mobile480
+            padding: 2.8vw
+            width: 45vw
+            font-size: 3.6vw
+            margin-left: auto
+            margin-right: auto
+            margin-top: 5vw
+        .send-icon
+            margin-left: 10px

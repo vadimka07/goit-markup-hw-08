@@ -1,0 +1,46 @@
+.top-banner
+    /* padding: 350px 0 200px; */
+    background: var(--bgColorTopBanner) url(../images/top-banner.jpg) no-repeat top center
+    background-size: cover
+    height: 600px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media tablet
+        padding: 18vw 0 15.3vw
+        background: var(--bgColorTopBanner) url(../images/top-banner_tablet.jpg) no-repeat top center
+        background-size: cover
+        height: auto
+    @media mobile768
+        padding: 15.5vw 0 15vw
+    @media mobile480
+        padding: 25.5vw 0 26vw
+.open-popup
+    background: var(--colorButton)
+    border-radius: 4px
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15)
+    border: none
+    color: var(--colorWhite)
+    margin: auto
+    display: block
+    padding: 10px 32px
+    font-size: 16px
+    line-height: floor((30 / 16), 2)
+    letter-spacing: 0.06em
+    font-family: var(--ffBold)
+    cursor: pointer
+    margin-top: 30px
+    @media tablet
+        padding: 1.3vw 4.2vw
+        font-size: 2.2vw
+        line-height: 2
+        letter-spacing: 0.06em
+        margin-top: 4vw
+    @media mobile768
+        padding: 1.3vw 4.2vw
+        font-size: 2.1vw
+        margin-top: 4vw
+    @media mobile480
+        font-size: 4.1vw
+        margin-top: 6vw
